@@ -27,6 +27,7 @@ nav {
   width: 50px;
   height: 60px;
 }
+
 .applicant-intro {
   width: 100%;
   min-height: 300px;
@@ -38,7 +39,7 @@ nav {
 
 .applicant-intro-text {
   position: relative;
-  z-index: 1000;
+  z-index: 100;
   width: 60%;
 }
 
@@ -49,6 +50,7 @@ nav {
   top: 80px;
   right: 600px;
   position: absolute;
+  z-index: 10;
   background-color: var(--primary-color);
   opacity: 0.05;
   display: block;
@@ -99,6 +101,8 @@ nav {
 .contact-btn {
   background-color: var(--mid-color);
   color: var(--secondary-color);
+  position: relative;
+  z-index: 10000;
   animation-name: zoomer;
   animation-iteration-count: infinite;
   animation-duration: 1.75s;
@@ -109,7 +113,6 @@ nav {
   width: 40%;
   text-align: right;
   position: relative;
-  z-index: 1000;
 }
 
 .applicant-photo-case::after {
@@ -120,6 +123,7 @@ nav {
   top: 150px;
   left: -600px;
   position: absolute;
+  z-index: 10;
   background-color: var(--primary-color);
   opacity: 0.07;
   display: block;

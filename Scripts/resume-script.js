@@ -12,7 +12,3 @@ function validateForm() {
     return false;
   }
 }
-
-document
-  .querySelector('.contact-form')
-  .addEventListener('submit', validateForm);
