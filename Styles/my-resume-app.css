@@ -7,14 +7,15 @@
 html {
   scroll-behavior: smooth;
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
   color: var(--primary-color);
 }
 
@@ -29,7 +30,7 @@ nav {
 .applicant-intro {
   width: 100%;
   min-height: 300px;
-  overflow: auto;
+  overflow: hidden;
   padding: 0 100px 30px;
   display: flex;
   justify-content: space-between;
@@ -86,10 +87,22 @@ nav {
   color: var(--secondary-color);
 }
 
+@keyframes zoomer {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.02);
+  }
+}
+
 .contact-btn {
   background-color: var(--mid-color);
   color: var(--secondary-color);
-  /* margin-left: 30px; */
+  animation-name: zoomer;
+  animation-iteration-count: infinite;
+  animation-duration: 1.75s;
+  animation-timing-function: ease;
 }
 
 .applicant-photo-case {
@@ -112,9 +125,21 @@ nav {
   display: block;
 }
 
+@keyframes translator {
+  from {
+    transform: translateX(700px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .applicant-photo {
   background-color: var(--primary-color);
   width: 330px;
+  animation-name: translator;
+  animation-duration: 1.6s;
+  animation-timing-function: ease;
   height: 350px;
   margin: 100px 0 30px auto;
 }
@@ -313,7 +338,7 @@ nav {
   height: 55px;
 }
 
-.contact-form {
+.contact-form-container {
   width: 85%;
   margin: 54px auto 20px;
 }
@@ -343,5 +368,6 @@ button {
 
 button:hover {
   letter-spacing: 3px;
+  cursor: pointer;
   transition: all 0.75s ease;
 }

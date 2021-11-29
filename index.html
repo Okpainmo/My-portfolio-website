@@ -66,7 +66,6 @@
             >
             <a
               href="#to-form"
-              role="button"
               class="contact-btn"
             >
               Let's Connect</a
@@ -109,7 +108,7 @@
           </div>
           <div class="contact-case-item">
             <span class="fas fa-envelope"></span>
-            <span>okpainmoandrews@gmail.com</span>
+            <span>okpainmoandrew@gmail.com</span>
           </div>
           <div class="contact-case-item">
             <span class="fas fa-mobile-alt"></span>
@@ -135,12 +134,12 @@
         <div class="resume-header" style="margin-top: 100px" id="to-form">
           Drop A Message
         </div>
-        <div class="contact-form">
-          <form data-netlify="true" name="My portfolio website contact form">
+        <div class="contact-form-container">
+          <form data-netlify="true" name="My portfolio website contact form" class="contact-form">
             <label for="visitor's name">Full Name</label>
-            <input type="text" name="user-name" />
+            <input type="text" name="user-name" class="input-1"/>
             <label for="visitor's name">Email</label>
-            <input type="text" name="user-mail" />
+            <input type="text" name="user-mail" class="input-2"/>
             <div
               class="mail-assure"
               style="color: grey; text-align: center; margin-bottom: 5px"
@@ -149,21 +148,24 @@
             </div>
             <br />
             <label for="visitor's message">Drop your message here</label>
-            <textarea name="visitor's message" cols="20" rows="5"></textarea>
+            <textarea name="visitor's message" cols="20" rows="5" class="message-field"></textarea>
             <button type="submit">Submit message</button>
           </form>
         </div>
         <div class="end-text">
-          <div>Built with so much <span class="fas fa-heart"></span> by me</div>
-          <span>&copy; 2021, All rights reserved, A.J Okpainmo</span> <br />
+          <div>Built with so much <span class="fas fa-heart"></span> by me.</div>
+          <span>&copy; 2021, All rights reserved, A.J Okpainmo.</span> <br />
           <div style="padding-top:7px;">
             icons by
             <a href="https://fontawesome.com/" style="color: purple"
               >font awesome</a
-            ></div>
+            >.</div>
           </div>
         </div>
       </section>
     </main>
+
+
+    <script src="./Scripts/resume-script.js"></script>
   </body>
 </html>
