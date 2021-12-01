@@ -19,6 +19,10 @@ body {
   color: var(--primary-color);
 }
 
+a {
+  color: purple;
+}
+
 nav {
   padding: 10px 50px;
 }
@@ -54,7 +58,6 @@ nav {
   background-color: var(--primary-color);
   opacity: 0.05;
   display: block;
-  z-index: 100;
 }
 
 .intro-text-bold {
@@ -131,10 +134,12 @@ nav {
 
 @keyframes translator {
   from {
-    transform: translateX(700px);
+    /* transform: translateX(700px); */
+    opacity: 0;
   }
   to {
-    transform: translateX(0);
+    /* transform: translateX(0); */
+    opacity: 1;
   }
 }
 
@@ -152,6 +157,8 @@ nav {
   width: inherit;
   height: inherit;
   filter: grayscale(1);
+  position: relative;
+  z-index: 1000;
   margin: 0;
   transform: translate(-20px, -20px);
 }
@@ -385,6 +392,7 @@ button:hover {
   font-size: 16px;
   text-align: center;
   position: relative;
+  min-height: calc(100vh - 10vh);
   top: 10vh;
 }
 .action-message {
@@ -393,15 +401,27 @@ button:hover {
   margin: 15px;
   padding-top: 100px;
   min-height: 400px;
-  color: var(--mid-color);
+  color: var(--secondary-color);
 }
 
 .action-message h3 {
-  color: black;
-  margin-bottom: 7px;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+.action-message h3::after {
+  content: '';
+  background-color: var(--secondary-color);
+  width: 80px;
+  margin: 2px auto;
+  height: 2px;
+  display: block;
 }
 
 .action-message a {
   color: purple;
   text-decoration: none;
+}
+
+.bg-color {
+  background-color: var(--mid-color);
 }
