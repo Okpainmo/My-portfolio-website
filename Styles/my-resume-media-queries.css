@@ -2,6 +2,10 @@
   .applicant-intro {
     flex-direction: column-reverse;
   }
+  .applicant-intro:after {
+    top: 100px;
+    right: 560px;
+  }
   .applicant-intro-text {
     width: 100%;
     text-align: center;
@@ -11,7 +15,7 @@
   }
   .applicant-photo-case::after {
     top: 275px;
-    left: 100px;
+    left: 30px;
   }
 }
 
@@ -22,6 +26,14 @@
   .resume-array-item {
     width: 100%;
     margin-bottom: 30px;
+  }
+  .applicant-photo-case::after {
+    top: 225px;
+    left: 100px;
+  }
+  .applicant-intro:after {
+    top: 140px;
+    right: 540px;
   }
   .contact-case {
     flex-direction: column;

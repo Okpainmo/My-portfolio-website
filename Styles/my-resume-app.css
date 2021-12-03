@@ -134,11 +134,9 @@ nav {
 
 @keyframes translator {
   from {
-    /* transform: translateX(700px); */
     opacity: 0;
   }
   to {
-    /* transform: translateX(0); */
     opacity: 1;
   }
 }
@@ -147,7 +145,7 @@ nav {
   background-color: var(--primary-color);
   width: 330px;
   animation-name: translator;
-  animation-duration: 1.6s;
+  animation-duration: 2.5s;
   animation-timing-function: ease;
   height: 350px;
   margin: 100px 0 30px auto;
