@@ -84,7 +84,7 @@
   }
   .applicant-photo {
     margin: 30px auto;
-    transform: translate(15px, 10px);
+    transform: translate(10px, 10px);
   }
   .applicant-photo-case::after {
     top: 273px;
