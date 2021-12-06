@@ -149,14 +149,14 @@ nav {
   animation-timing-function: ease;
   height: 350px;
   margin: 100px 0 30px auto;
+  position: relative;
+  z-index: 1000;
 }
 
 .applicant-photo img {
   width: inherit;
   height: inherit;
   filter: grayscale(1);
-  position: relative;
-  z-index: 1000;
   margin: 0;
   transform: translate(-20px, -20px);
 }
