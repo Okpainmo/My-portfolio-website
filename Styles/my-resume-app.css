@@ -1,4 +1,6 @@
 :root {
+  /* css variables/custom properties */
+
   --primary-color: rgb(17, 16, 16);
   --secondary-color: white;
   --mid-color: grey;
@@ -9,6 +11,8 @@ html {
 }
 
 * {
+  /* all elements will take this style */
+  
   padding: 0;
   margin: 0;
   box-sizing: border-box;
