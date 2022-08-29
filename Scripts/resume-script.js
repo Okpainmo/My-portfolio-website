@@ -10,6 +10,6 @@ function validateForm() {
     );
     return false;
   } else {
-    contact - form.action === './form-action-page.html';
+    form.action === './form-action-page.html';
   }
 }
