@@ -1,3 +1,4 @@
+const form = document.querySelector('.contact-form');
 const input1 = document.querySelector('.input-1');
 const input2 = document.querySelector('.input-2');
 const textField = document.querySelector('.message-field');
@@ -8,5 +9,7 @@ function validateForm() {
       'Opps, it seems there is still an empty form field. Please fill out all form fields.'
     );
     return false;
+  } else {
+    contact - form.action === './form-action-page.html';
   }
 }
