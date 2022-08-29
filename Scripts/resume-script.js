@@ -11,5 +11,6 @@ function validateForm() {
     return false;
   } else {
     form.action === './form-action-page.html';
+    data - netlify === 'true';
   }
 }
